@@ -33,13 +33,13 @@ app.post('/save-subscription', async (req, res) => {
 // push message to frontend
 const vapidKeys = {
     publicKey:
-      'BFCOe4HsK8uEdJtwfFjJs6Y0CXjwZKplere7WD8_HRVnZfXRN1mppuBz_xLv9b6e3bOUiRtC6GJiMaKM7HBfJZw',
-    privateKey: 'Q8vtowuwTrhQ5StEN774ojICv9lHmdgAj98pLBTY_gw',
+      'your-public-key',
+    privateKey: 'your-private-key'
   }
 
   //setting our previously generated VAPID keys
   webpush.setVapidDetails(
-    'mailto:damipurohit@gmail.com',
+    'mailto:your@email.com',
     vapidKeys.publicKey,
     vapidKeys.privateKey
   )
