@@ -86,7 +86,7 @@ self.addEventListener('activate', async () => {
 
     //To listen/subscribe to remote push messages we need the browser web app to register to the push service.
     try {
-        const PUBLIC_KEY = 'BFCOe4HsK8uEdJtwfFjJs6Y0CXjwZKplere7WD8_HRVnZfXRN1mppuBz_xLv9b6e3bOUiRtC6GJiMaKM7HBfJZw';
+        const PUBLIC_KEY = 'your-wapid-public-key';
         const applicationServerKey = urlB64ToUint8Array(PUBLIC_KEY)
         const options = {applicationServerKey, userVisibleOnly: true}
         const subscription = await self.registration.pushManager.subscribe(options)
